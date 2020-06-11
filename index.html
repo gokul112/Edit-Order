@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Edit Order</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+    <div class="bg-grey">
+    <div class="container p-10">
+        <div class="row bg-white">
+            <div class="col-md-6">
+                <h2>Billing Address</h2>
+                    <form action="/action_page.php" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="fName" placeholder="First Name" name="billingAddressfName" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="lName" placeholder="Last Name" name="billingAddresslName" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="addrLine1" placeholder="Address Line 1" name="billingAddressaddrLine1" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="addrLine2" placeholder="Address Line 2" name="billingAddressaddrLine2" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="city" placeholder="City" name="billingAddresscity" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="state" placeholder="State" name="billingAddressstate" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="zipCode" placeholder="Zipcode" name="billingAddresszipCode" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="country" placeholder="Country" name="billingAddresscountry" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="orderDate">Order Date:</label>
+                                    <input type="date" class="form-control" id="orderDate" placeholder="Order Date" name="billingAddressorderDate" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                    </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Shipping Address</h2>
+                    <form action="/action_page.php" class="needs-validation" novalidate>
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="fName" placeholder="First Name" name="shippingAddressfName" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="lName" placeholder="Last Name" name="shippingAddresslName" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="addrLine1" placeholder="Address Line 1" name="shippingAddressaddrLine1" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="addrLine2" placeholder="Address Line 2" name="shippingAddressaddrLine2" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="city" placeholder="City" name="shippingAddresscity" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="state" placeholder="State" name="shippingAddressstate" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="zipCode" placeholder="Zipcode" name="shippingAddresszipCode" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" id="country" placeholder="Country" name="shippingAddresscountry" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="orderDate">Excepted Date:</label>
+                                    <input type="date" class="form-control" id="orderDate" placeholder="Order Date" name="shippingAddressorderDate" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+
+
+                    </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container bg-white pt-10">
+         <div id="table" class="table table-bordered"></div>
+    
+        <button class="btn btn-info" onclick=addProducts()>Add Product</button>
+        <button class="btn btn-success float-right" onclick=saveProducts()>Save Product</button>
+    </div>
+    </div>
+<script>
+    var json={ 
+    "billingAddress":{
+        "fName": "Gokul Raj",
+        "lName": "Tiruchengode Madheswaran",
+        "addrLine1": "150-2,Apc nagar,Salem Main Road",
+        "addrLine2": "Tiruchengode,Namakkal",
+        "city": "Namakkal",
+        "state": "Tamil Nadu",
+        "zipCode": "637211",
+        "country": "India",
+        "orderDate": "2020-06-11"
+    },
+    "shippingAddress":{
+            "fName": "Gokul Raj",
+            "lName": "Tiruchengode Madheswaran",
+            "addrLine1": "150-2,Apc nagar,Salem Main Road",
+            "addrLine2": "Tiruchengode,Namakkal",
+            "city": "Namakkal",
+            "state": "Tamil Nadu",
+            "zipCode": "637211",
+            "country": "India",
+            "orderDate": "2020-06-11"
+    },
+    "products":[
+        {
+            "ProductID":"100000",
+            "ProductName":"Stockholm drilling table",
+            "Quantity":8,
+            "UnitPrice":529,
+            "TotalPrice":"",
+            "Notes":"",
+            "":""
+        },
+        {
+            "ProductID":"100001",
+            "ProductName":"Oulu Dinning Chair Tangerinie (Set of 4)",
+            "Quantity":2,
+            "UnitPrice":105,
+            "TotalPrice":"",
+            "Notes":"",
+            "":""
+        },
+        {
+            "ProductID":"100002",
+            "ProductName":"Oulu Dinning Chair Graphite (Set of 4)",
+            "Quantity":12,
+            "UnitPrice":105,
+            "TotalPrice":"",
+            "Notes":"",
+            "":""
+        }]
+
+}
+ prePopulate(json.billingAddress,"billingAddress");
+ prePopulate(json.shippingAddress,"shippingAddress")
+
+//Populate data
+function prePopulate(json,value){
+    for(key in json)
+    {
+    if(json.hasOwnProperty(key))
+        $('input[name='+value+key+']').val(json[key]);
+    }
+}
+
+//Save products
+function saveProducts(){
+    console.log(json.products,"products")
+}
+
+//Add Products
+function addProducts(){
+        var intable = document.getElementById('table').getElementsByTagName('tbody')[0];
+        var row = intable.insertRow();
+        json.products.push({
+                    "ProductID":"",
+                    "ProductName":"",
+                    "Quantity":"",
+                    "UnitPrice":"",
+                    "TotalPrice":"",
+                    "Notes":"",
+                    "":""
+                })
+        
+        for(var i=0;i<7;i++){
+                var cell = row.insertCell();
+                var input = document.createElement("input");
+                input.type = "text";
+                input.className = "form-control";
+                input.required = true;
+                if(i===0){
+                    input.oninput = function(e){
+                        json.products[this.parentNode.parentNode.rowIndex-1].ProductID = e.target.value;
+                    };
+                }
+                if(i===1){
+                    input.oninput = function(e){
+                        json.products[this.parentNode.parentNode.rowIndex-1].ProductName = e.target.value;
+                    };
+                }
+                if(i===2){
+                    input.oninput = function(e){
+                        json.products[this.parentNode.parentNode.rowIndex-1].Quantity = e.target.value;
+                    json.products[this.parentNode.parentNode.rowIndex-1].TotalPrice = json.products[this.parentNode.parentNode.rowIndex-1].UnitPrice * json.products[this.parentNode.parentNode.rowIndex-1].Quantity;
+
+                    };
+                }
+                if(i===3){
+                    input.oninput = function(e){
+                        json.products[this.parentNode.parentNode.rowIndex-1].UnitPrice = e.target.value;
+                    json.products[this.parentNode.parentNode.rowIndex-1].TotalPrice = json.products[this.parentNode.parentNode.rowIndex-1].UnitPrice * json.products[this.parentNode.parentNode.rowIndex-1].Quantity;
+
+                    };
+                }
+
+                if(i===4){
+                input.disabled = true;
+
+                }
+                if(i===6){
+                var input = document.createElement("button");
+                    input.value="Delete";
+                    input.className = "btn btn-danger";
+                    input.onclick = function(){
+                        index = this.parentNode.parentNode.rowIndex;
+                        table.deleteRow(index);
+                    }
+                    var text = document.createTextNode("Delete");
+                    input.appendChild(text);
+                }
+                cell.append(input);
+            }
+        }
+                //Add Headers
+                function addHeaders(table, keys) {
+                var row = table.insertRow();
+                for( var i = 0; i < keys.length; i++ ) {
+                    var cell = row.insertCell();
+                    cell.appendChild(document.createTextNode(keys[i]));
+                }
+                }
+
+                var table = document.createElement('table');
+                    for( var i = 0; i < json.products.length; i++ ) {
+
+                    var child = json.products[i];
+                    if(i === 0 ) {
+                        addHeaders(table, Object.keys(child));
+                    }
+                    var row = table.insertRow();
+                    Object.keys(child).forEach(function(k) {
+                        var cell = row.insertCell();
+                        cell.className = k==="ProductName"?"wid":"";
+                        var input = document.createElement("input");
+                        input.type = "text";
+                        input.className = "form-control";
+                        input.name=k;
+                        input.required = true;
+                        if(k==="Quantity"){
+                            input.oninput = function(e){
+                            document.getElementsByName("TotalPrice")[this.parentNode.parentNode.rowIndex-1].value = e.target.value * document.getElementsByName("UnitPrice")[this.parentNode.parentNode.rowIndex-1].value;
+                            };
+                        }
+                        if(k==="UnitPrice"){
+                            input.oninput = function(e){
+                            document.getElementsByName("TotalPrice")[this.parentNode.parentNode.rowIndex-1].value = e.target.value * document.getElementsByName("Quantity")[this.parentNode.parentNode.rowIndex-1].value;
+                            };
+                        }
+                        if(k==="TotalPrice"){
+                            input.value = child["Quantity"] * child["UnitPrice"];
+                            input.disabled = true;
+                        }
+                        else
+                            input.value = child[k];
+                        if(k===""){
+                            var input = document.createElement("button");
+                            input.value="Delete";
+                            input.className = "btn btn-danger";
+                            input.onclick = function(){
+                                index = this.parentNode.parentNode.rowIndex;
+                                table.deleteRow(index);
+                            }
+                            var text = document.createTextNode("Delete");
+                            input.appendChild(text);
+                        }
+                        cell.appendChild(input);
+                    })
+                    }
+
+                document.getElementById('table').appendChild(table)
+
+            
+</script>
+</body>
+</html>
